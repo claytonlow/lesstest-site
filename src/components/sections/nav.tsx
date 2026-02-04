@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Zap, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,14 +24,14 @@ export function Nav() {
       }`}
     >
       <div className="flex items-center justify-between px-6 md:px-8 py-4 max-w-7xl mx-auto">
-        <a href="#" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-2">
           <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
             <Zap className="text-white w-5 h-5 fill-current" />
           </div>
           <span className="text-xl font-bold tracking-tight text-slate-800">
             LessTest
           </span>
-        </a>
+        </Link>
 
         {/* Desktop menu */}
         <div className="hidden md:flex items-center gap-8">
@@ -46,20 +47,26 @@ export function Nav() {
           >
             How It Works
           </a>
+          <Link
+            href="/compare"
+            className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
+          >
+            Compare
+          </Link>
+          <Link
+            href="/use-cases"
+            className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
+          >
+            Use Cases
+          </Link>
           <a
             href="#pricing"
             className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
           >
             Pricing
           </a>
-          <a
-            href="#faq"
-            className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
-          >
-            FAQ
-          </a>
           <Button size="sm" className="rounded-full">
-            Get Started
+            Add to Chrome
           </Button>
         </div>
 
@@ -76,7 +83,7 @@ export function Nav() {
       {/* Mobile menu */}
       <div
         className={`md:hidden overflow-hidden transition-all duration-300 ${
-          isOpen ? "max-h-80" : "max-h-0"
+          isOpen ? "max-h-96" : "max-h-0"
         }`}
       >
         <div className="px-6 pb-6 glass border-t border-slate-100">
@@ -95,6 +102,20 @@ export function Nav() {
             >
               How It Works
             </a>
+            <Link
+              href="/compare"
+              className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Compare
+            </Link>
+            <Link
+              href="/use-cases"
+              className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Use Cases
+            </Link>
             <a
               href="#pricing"
               className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
@@ -102,15 +123,8 @@ export function Nav() {
             >
               Pricing
             </a>
-            <a
-              href="#faq"
-              className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              FAQ
-            </a>
             <Button size="sm" className="w-full mt-2">
-              Get Started
+              Add to Chrome
             </Button>
           </div>
         </div>

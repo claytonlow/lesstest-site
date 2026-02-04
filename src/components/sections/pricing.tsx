@@ -10,28 +10,29 @@ const plans = [
     name: "Free",
     price: "$0",
     period: "forever",
-    description: "Perfect for side projects and learning",
+    description: "For individuals and small projects",
     features: [
       "Unlimited local tests",
-      "Basic reporting",
+      "Visual test authoring",
+      "AI self-healing",
+      "55+ built-in actions",
       "Community support",
-      "Single project",
     ],
-    cta: "Get Started",
+    cta: "Add to Chrome",
     highlighted: false,
   },
   {
     name: "Team",
-    price: "$29",
+    price: "$49",
     period: "per month",
-    description: "For growing teams shipping fast",
+    description: "For QA teams shipping fast",
     features: [
       "Everything in Free",
-      "Parallel cloud execution",
-      "Advanced analytics",
-      "Up to 10 team members",
-      "Priority support",
+      "Unlimited team members",
+      "Cloud test storage",
+      "Shared test library",
       "CI/CD integrations",
+      "Priority support",
     ],
     cta: "Start Free Trial",
     highlighted: true,
@@ -43,7 +44,7 @@ const plans = [
     description: "For organizations with advanced needs",
     features: [
       "Everything in Team",
-      "Unlimited team members",
+      "Self-hosted option",
       "SSO & SAML",
       "Dedicated support",
       "Custom integrations",
@@ -69,7 +70,7 @@ export function Pricing() {
             Simple, transparent pricing
           </h2>
           <p className="text-slate-500 max-w-lg mx-auto">
-            Start free, scale as you grow. No hidden fees, no surprises.
+            Start free, upgrade when you need team features. Your data stays local.
           </p>
         </motion.div>
 

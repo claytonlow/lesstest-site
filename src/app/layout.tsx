@@ -8,8 +8,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "LessTest | Testing that scales, without the weight",
-  description: "The automated testing framework that actually works for developers.",
+  title: "LessTest | No-code test automation with AI reasoning",
+  description: "Build resilient E2E tests without writing code. LessTest's AI understands your intent—so tests heal themselves when UI changes.",
 };
 
 export default function RootLayout({

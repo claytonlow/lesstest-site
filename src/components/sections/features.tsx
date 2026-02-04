@@ -1,39 +1,46 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle2, Zap, Layout, Shield, Clock, Code } from "lucide-react";
+import {
+  Sparkles,
+  MousePointerClick,
+  Shield,
+  Eye,
+  Workflow,
+  Network
+} from "lucide-react";
 import { fadeInUp, staggerContainer, staggerItem } from "@/lib/animations";
 
 const features = [
   {
-    icon: Zap,
-    title: "Zero Config",
-    desc: "Drop into any repo and run. We auto-detect your setup so you don't have to.",
+    icon: MousePointerClick,
+    title: "Visual Test Authoring",
+    desc: "Point, click, and describe what you want in plain English. No XPath or CSS selectors required.",
   },
   {
-    icon: Layout,
-    title: "Parallelized",
-    desc: "Execute hundreds of tests in seconds. Built-in distribution across all CPU cores.",
-  },
-  {
-    icon: CheckCircle2,
-    title: "Human Readable",
-    desc: "Clear, concise logs that tell you exactly what failed and why—no digging required.",
+    icon: Sparkles,
+    title: "AI Self-Healing",
+    desc: "When selectors break, AI finds the element you meant—not just the one you clicked. Tests fix themselves.",
   },
   {
     icon: Shield,
-    title: "Type Safe",
-    desc: "Full TypeScript support with intelligent auto-completion and type inference.",
+    title: "Intent Over Implementation",
+    desc: "\"Click the Submit button\" works even when IDs change. Semantic matching adapts to new layouts.",
   },
   {
-    icon: Clock,
-    title: "Watch Mode",
-    desc: "Instant feedback as you code. Tests re-run automatically when files change.",
+    icon: Eye,
+    title: "Glass Box AI",
+    desc: "See exactly why selectors matched and what alternatives were tried. Full transparency into AI decisions.",
   },
   {
-    icon: Code,
-    title: "Snapshot Testing",
-    desc: "Capture component output and detect unintended changes with visual diffs.",
+    icon: Workflow,
+    title: "55+ Built-in Actions",
+    desc: "Navigation, forms, assertions, network mocking, conditional logic—everything you need without code.",
+  },
+  {
+    icon: Network,
+    title: "API & Network Control",
+    desc: "Intercept requests, mock responses, and test edge cases. Full control over the network layer.",
   },
 ];
 
@@ -49,11 +56,11 @@ export function Features() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            Engineered for speed
+            Tests that understand intent
           </h2>
           <p className="text-slate-500 max-w-lg mx-auto">
-            Everything you need to test at the speed of thought, without the
-            boilerplate.
+            Combine no-code simplicity with AI-powered resilience. Build tests anyone
+            can maintain.
           </p>
         </motion.div>
 

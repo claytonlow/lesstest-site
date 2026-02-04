@@ -1,30 +1,27 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Download, Settings, Play } from "lucide-react";
+import { Chrome, PanelRightOpen, MousePointerClick } from "lucide-react";
 import { fadeInUp, staggerContainer, staggerItem } from "@/lib/animations";
 
 const steps = [
   {
-    icon: Download,
+    icon: Chrome,
     step: "01",
-    title: "Install",
-    description: "Add LessTest to your project with a single command.",
-    code: "npm install lesstest --save-dev",
+    title: "Install Extension",
+    description: "Add LessTest to Chrome in one click. No downloads or setup.",
   },
   {
-    icon: Settings,
+    icon: PanelRightOpen,
     step: "02",
-    title: "Configure",
-    description: "Auto-generated config that just works. Customize if needed.",
-    code: "npx lesstest init",
+    title: "Open Side Panel",
+    description: "LessTest lives in Chrome's side panel. Open it on any website.",
   },
   {
-    icon: Play,
+    icon: MousePointerClick,
     step: "03",
-    title: "Run",
-    description: "Execute your tests with lightning-fast performance.",
-    code: "npx lesstest run",
+    title: "Build Visually",
+    description: "Point and click to add steps. Use natural language for complex actions.",
   },
 ];
 
@@ -40,10 +37,10 @@ export function HowItWorks() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            Get started in 3 steps
+            Start testing in 30 seconds
           </h2>
           <p className="text-slate-500 max-w-lg mx-auto">
-            From zero to running tests in under a minute. No complex setup required.
+            No downloads. No IDE. No configuration files. Just install and go.
           </p>
         </motion.div>
 
@@ -75,13 +72,44 @@ export function HowItWorks() {
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
                   {step.title}
                 </h3>
-                <p className="text-slate-600 mb-4">{step.description}</p>
-                <code className="inline-block px-4 py-2 rounded-lg bg-slate-900 text-slate-100 text-sm font-mono">
-                  {step.code}
-                </code>
+                <p className="text-slate-600">{step.description}</p>
               </div>
             </motion.div>
           ))}
+        </motion.div>
+
+        {/* Before/After comparison */}
+        <motion.div
+          variants={fadeInUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="mt-20 grid md:grid-cols-2 gap-8"
+        >
+          <div className="p-6 rounded-2xl bg-red-50 border border-red-100">
+            <h3 className="text-lg font-bold text-red-900 mb-4">Traditional Testing</h3>
+            <code className="block text-sm text-red-800 bg-red-100 p-4 rounded-lg font-mono whitespace-pre-wrap">
+{`await page.click('#submit-btn-v2-redesign');
+// ❌ Breaks when ID changes
+// ❌ Requires code knowledge
+// ❌ Manual maintenance`}
+            </code>
+          </div>
+
+          <div className="p-6 rounded-2xl bg-green-50 border border-green-100">
+            <h3 className="text-lg font-bold text-green-900 mb-4">LessTest</h3>
+            <div className="bg-green-100 p-4 rounded-lg">
+              <div className="flex items-center gap-3 text-green-800">
+                <MousePointerClick className="w-5 h-5" />
+                <span className="font-medium">Click &quot;Submit&quot; button</span>
+              </div>
+              <p className="text-sm text-green-700 mt-2 ml-8">
+                ✓ Works even when ID changes<br/>
+                ✓ Anyone can read and edit<br/>
+                ✓ Self-healing AI
+              </p>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>

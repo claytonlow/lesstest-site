@@ -12,9 +12,9 @@ const logos = [
 ];
 
 const stats = [
-  { value: "10K+", label: "Developers" },
-  { value: "1M+", label: "Tests Run Daily" },
-  { value: "99.9%", label: "Uptime" },
+  { value: "10K+", label: "QA Teams" },
+  { value: "5M+", label: "Tests Created" },
+  { value: "80%", label: "Less Maintenance" },
 ];
 
 export function SocialProof() {
@@ -29,7 +29,7 @@ export function SocialProof() {
           className="text-center"
         >
           <p className="text-sm font-medium text-slate-500 mb-8">
-            Trusted by developers at world-class companies
+            Trusted by QA teams and developers at
           </p>
 
           {/* Company logos */}

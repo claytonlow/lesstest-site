@@ -6,34 +6,34 @@ import { fadeInUp, staggerContainer, staggerItem } from "@/lib/animations";
 
 const faqs = [
   {
-    question: "How is LessTest different from Jest or Vitest?",
+    question: "How is LessTest different from Selenium or Playwright?",
     answer:
-      "LessTest is designed with zero-config in mind. While Jest and Vitest are powerful, they often require extensive configuration. LessTest auto-detects your project setup and works out of the box, while still being fully customizable when needed.",
+      "Selenium and Playwright require programming skills and extensive setup. LessTest is a Chrome extension with visual test authoring—no code required. Plus, our AI self-healing means tests don't break when developers refactor the UI.",
   },
   {
-    question: "Does LessTest support TypeScript?",
+    question: "What does \"AI self-healing\" mean?",
     answer:
-      "Yes! LessTest has first-class TypeScript support. We automatically handle TypeScript compilation without any additional configuration. You get full type inference in your test files and meaningful error messages.",
+      "Traditional tests use rigid selectors like #submit-btn-v2. When that ID changes, the test breaks. LessTest's AI understands intent—\"Click the Submit button\" finds the right element regardless of how it's implemented in the DOM.",
   },
   {
-    question: "Can I migrate from my current testing framework?",
+    question: "Can I use LessTest if I'm not a developer?",
     answer:
-      "Absolutely. LessTest provides migration tools for Jest, Mocha, and Vitest. Most tests can be migrated automatically with our CLI tool: `npx lesstest migrate --from jest`.",
+      "Absolutely! LessTest is designed for QA engineers, product managers, and anyone who needs to create tests. Point, click, and describe what you want in plain English. No coding required.",
   },
   {
-    question: "Is there a VS Code extension?",
+    question: "Does LessTest work with any website?",
     answer:
-      "Yes! Our VS Code extension provides inline test results, one-click test running, debugging support, and code coverage visualization directly in your editor.",
+      "Yes. LessTest works with any web application—React, Vue, Angular, WordPress, or plain HTML. It runs in Chrome's side panel and interacts with pages exactly like a real user would.",
   },
   {
-    question: "How does the cloud execution work?",
+    question: "Can I run tests in CI/CD?",
     answer:
-      "Cloud execution distributes your tests across our global infrastructure. Tests run in parallel on optimized containers, reducing CI times by up to 90%. You only pay for what you use.",
+      "Yes! The Team plan includes CI/CD integrations. Export tests to run in your pipeline, or use our cloud execution to run tests on every commit.",
   },
   {
-    question: "Do you offer refunds?",
+    question: "Is my test data secure?",
     answer:
-      "Yes, we offer a 30-day money-back guarantee on all paid plans. If you're not satisfied, contact our support team for a full refund.",
+      "Your test data stays local by default—nothing is sent to our servers without your permission. Enterprise customers can self-host for complete data sovereignty.",
   },
 ];
 

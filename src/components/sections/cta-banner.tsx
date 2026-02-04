@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Chrome } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { fadeInUp } from "@/lib/animations";
 
@@ -22,18 +22,19 @@ export function CTABanner() {
 
           <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              Ready to ship faster?
+              Stop fighting flaky tests
             </h2>
             <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10">
-              Join thousands of developers who trust LessTest to keep their code
-              quality high and their test suites fast.
+              Join thousands of QA teams who trust LessTest to keep their test suites
+              reliable and their coverage high.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button
                 size="lg"
                 className="w-full sm:w-auto bg-white text-indigo-600 hover:bg-slate-100 shadow-xl"
               >
-                Get Started Free
+                <Chrome className="w-5 h-5" />
+                Add to Chrome — Free
                 <ArrowRight className="w-5 h-5" />
               </Button>
               <Button
@@ -44,6 +45,9 @@ export function CTABanner() {
                 Schedule a Demo
               </Button>
             </div>
+            <p className="mt-6 text-sm text-white/60">
+              No credit card required. Start testing in 30 seconds.
+            </p>
           </div>
         </div>
       </motion.div>

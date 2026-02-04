@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Github } from "lucide-react";
+import { ArrowRight, Chrome } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { staggerContainer, staggerItem } from "@/lib/animations";
 
@@ -22,27 +22,24 @@ export function Hero() {
           variants={staggerItem}
           className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-semibold mb-8"
         >
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
-          </span>
-          v1.0 is now live
+          <Chrome className="w-3.5 h-3.5" />
+          Chrome Extension
         </motion.div>
 
         <motion.h1
           variants={staggerItem}
           className="text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight text-slate-900 mb-6"
         >
-          Testing that scales, <br />
-          <span className="text-gradient">without the weight.</span>
+          No-code testing <br />
+          <span className="text-gradient">with AI reasoning.</span>
         </motion.h1>
 
         <motion.p
           variants={staggerItem}
           className="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          The automated testing framework that actually works for developers.
-          Clean, fast, and minimal configuration for modern web apps.
+          Build resilient E2E tests without writing code. LessTest&apos;s AI understands
+          your intent—so tests heal themselves when UI changes.
         </motion.p>
 
         <motion.div
@@ -50,14 +47,20 @@ export function Hero() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <Button size="lg" className="w-full sm:w-auto">
-            Get Started Free
+            Add to Chrome — Free
             <ArrowRight className="w-5 h-5" />
           </Button>
           <Button variant="secondary" size="lg" className="w-full sm:w-auto">
-            <Github className="w-5 h-5" />
-            Star on GitHub
+            Watch Demo
           </Button>
         </motion.div>
+
+        <motion.p
+          variants={staggerItem}
+          className="mt-6 text-sm text-slate-500"
+        >
+          No downloads. No IDE. No configuration. No code.
+        </motion.p>
       </motion.div>
     </header>
   );
