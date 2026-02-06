@@ -228,7 +228,7 @@ export default function BlogPost() {
               <div>
                 <p className="text-slate-500 mb-1">Traditional approach:</p>
                 <code className="bg-white px-2 py-1 rounded text-red-600">
-                  cy.get('#login-form > div:nth-child(2) > input').type('user@example.com')
+                  {`cy.get('#login-form > div:nth-child(2) > input').type('user@example.com')`}
                 </code>
               </div>
               <div>
