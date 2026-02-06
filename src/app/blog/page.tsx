@@ -17,12 +17,20 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
-    slug: "why-85-percent-of-tests-fail-on-redesign",
+    slug: "why-tests-fail-on-redesigns",
     title: "Why 85% of E2E Tests Fail on UI Redesigns (And How to Fix It)",
-    excerpt: "We analyzed 4 months of developer pain. The culprit? Brittle selectors. Here's how LessTest approaches self-healing test architecture.",
+    excerpt: "One developer spent 4 months comparing Cypress vs Playwright. Then a redesign broke everything. Here's why—and how to build tests that survive design changes.",
     date: "2026-02-06",
-    readTime: "4 min read",
+    readTime: "5 min read",
     category: "Testing Philosophy",
+  },
+  {
+    slug: "i-watched-our-qa-drown-in-selenium",
+    title: "I Watched Our QA Drown in Selenium. So I Built LessTest.",
+    excerpt: "The origin story: How an 8-developer team with 1 QA engineer led to a failed AI experiment, a hybrid insight, and a new approach to testing.",
+    date: "2026-02-06",
+    readTime: "6 min read",
+    category: "Founder Story",
   },
   {
     slug: "playwright-vs-lesstest-2025",
