@@ -1,0 +1,90 @@
+---
+title: "I Watched Our QA Drown in Selenium. So I Built LessTest."
+date: "2026-02-06"
+readTime: "6 min"
+category: "Founder Story"
+---
+
+# I Watched Our QA Drown in Selenium. So I Built LessTest.
+
+Two years ago, I sat in a retro meeting that changed everything.
+
+Our engineering team had just shipped a month of features. Eight developers, two weeks of sprints, a release every month. We were moving fast—or so we thought.
+
+Then our QA engineer spoke up.
+
+She was drowning.
+
+## The Bottleneck Nobody Talks About
+
+Here's the math that broke us: 8 developers producing code continuously, 1 QA tester trying to keep up. By the end of each month, she was swamped. The queue of "ready to test" tickets was longer than the sprint itself.
+
+She was a Selenium wizard. Knew the tool inside and out. But even wizards have limits.
+
+**One test. Hours—sometimes days—to write.** Complex features meant complex selectors, fragile locators, and the endless dance of `waitForElementToBeClickable()`.
+
+The kicker? Half those tests would break on the next UI refresh anyway.
+
+I watched a brilliant tester spend her time maintaining tests instead of finding bugs. Something had to change.
+
+## The AI Experiment (That Didn't Work)
+
+This was 2024. AI was exploding. Everyone was saying "just use an LLM."
+
+So I tried.
+
+I built a system where you could write tests in plain English, save them as `.md` files, and let an LLM (Claude, GPT-4) figure out the execution. The LLM would read the natural language steps, spin up Playwright or Chrome DevTools MCP, and perform the actions.
+
+It worked. Kind of.
+
+**The problems became obvious fast:**
+
+- **Token costs were brutal.** Every test run was an API call. At scale? Forget it.
+- **Speed was glacial.** Waiting for the LLM to parse, reason, and execute made tests slower than Selenium.
+- **Flakiness didn't go away.** It just became harder to debug when the AI made "creative" decisions.
+- **Not scalable.** Fine for a demo. A nightmare for a production test suite.
+
+I learned something important: **Natural language testing sounds like magic until you try to run it 500 times a day.**
+
+## The Hybrid Insight
+
+Here's what I realized: The problem wasn't *writing* tests. It was *maintaining* them.
+
+We didn't need an AI to *replace* the developer or QA engineer. We needed AI to *augment* the boring parts—the selectors, the waits, the "did this element move?" detective work.
+
+**The hybrid approach emerged:**
+
+- **Humans define the steps.** Clear, explicit, manual control over what the test should do.
+- **AI handles the semantic heavy lifting.** Understanding context, interpreting the DOM, performing complex actions when the UI changes.
+
+This wasn't about replacing test authors. It was about giving them superpowers.
+
+## What Changed
+
+When we rebuilt our testing stack around this philosophy, the difference was immediate:
+
+**Speed:** Tests that took hours to write now took minutes. The AI handled selector generation and maintenance.
+
+**Robustness:** When the UI changed, tests didn't immediately explode. The semantic understanding adapted.
+
+**Cost:** No more per-test token charges. The AI works at the framework level, not the execution level.
+
+**Morale:** Our QA engineer went from drowning in maintenance to actually testing features. Finding real bugs. Doing the job she was hired for.
+
+## Why LessTest Exists
+
+I built LessTest because I believe testing shouldn't be a bottleneck. It shouldn't be a chore. It shouldn't require a team of specialists just to keep the suite green.
+
+If you're a developer who's tired of flaky tests...
+
+If you're a QA engineer drowning in selector maintenance...
+
+If you're a team lead watching your release cycle slow to a crawl...
+
+**LessTest is for you.**
+
+We're not trying to replace your expertise. We're trying to remove the friction so you can actually use it.
+
+---
+
+*Clayt is the founder of LessTest. He's currently looking for teams willing to try a different approach to testing. [Get early access →](#)*
