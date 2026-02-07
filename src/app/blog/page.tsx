@@ -17,6 +17,14 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    slug: "finished-playwright-course-now-what",
+    title: "I Finished the Playwright Course. Now I Have No Idea How Real Projects Work.",
+    excerpt: "The gap between learning testing frameworks and understanding professional project structure is massive. Here's what tutorials don't teach you.",
+    date: "2026-02-07",
+    readTime: "6 min read",
+    category: "Career & Learning",
+  },
+  {
     slug: "why-tests-fail-on-redesigns",
     title: "Why 85% of E2E Tests Fail on UI Redesigns (And How to Fix It)",
     excerpt: "One developer spent 4 months comparing Cypress vs Playwright. Then a redesign broke everything. Here's why—and how to build tests that survive design changes.",
