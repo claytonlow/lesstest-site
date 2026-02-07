@@ -7,7 +7,7 @@ import { staggerContainer, staggerItem } from "@/lib/animations";
 
 export function Hero() {
   return (
-    <header className="relative px-6 md:px-8 pt-32 pb-24 max-w-7xl mx-auto text-center overflow-hidden">
+    <header className="relative px-6 md:px-8 pt-32 pb-24 mx-auto text-center overflow-hidden">
       {/* Gradient orbs */}
       <div className="orb orb-1 animate-pulse-glow" />
       <div className="orb orb-2 animate-pulse-glow" style={{ animationDelay: "1.5s" }} />

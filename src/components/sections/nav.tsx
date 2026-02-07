@@ -41,12 +41,12 @@ export function Nav() {
           >
             Features
           </a>
-          <a
-            href="#how-it-works"
+          <Link
+            href="/how-it-works"
             className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
           >
             How It Works
-          </a>
+          </Link>
           <Link
             href="/compare"
             className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
@@ -95,13 +95,13 @@ export function Nav() {
             >
               Features
             </a>
-            <a
-              href="#how-it-works"
+            <Link
+              href="/how-it-works"
               className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               How It Works
-            </a>
+            </Link>
             <Link
               href="/compare"
               className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
