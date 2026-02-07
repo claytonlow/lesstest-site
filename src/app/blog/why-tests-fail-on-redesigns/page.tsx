@@ -158,7 +158,7 @@ export default function BlogPost() {
           </p>
 
           <p>
-            Not "find the element at <code>div:nth-child(3) > span</code>," but 
+            Not "find the element at <code>div:nth-child(3) &gt; span</code>," but 
             "find the price display"?
           </p>
 
