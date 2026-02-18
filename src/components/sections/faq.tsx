@@ -53,7 +53,7 @@ export function FAQ() {
           </h2>
           <p className="text-slate-500">
             Can&apos;t find what you&apos;re looking for?{" "}
-            <a href="#" className="text-indigo-600 hover:underline">
+            <a href="#" className="text-teal-600 hover:underline">
               Contact our team
             </a>
           </p>

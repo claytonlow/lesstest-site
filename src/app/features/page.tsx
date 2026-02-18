@@ -106,11 +106,11 @@ const colorClasses: Record<
   { bg: string; border: string; text: string; icon: string; ring: string }
 > = {
   indigo: {
-    bg: "bg-indigo-50",
-    border: "border-indigo-100",
-    text: "text-indigo-700",
-    icon: "text-indigo-600",
-    ring: "ring-indigo-100",
+    bg: "bg-teal-50",
+    border: "border-teal-100",
+    text: "text-teal-700",
+    icon: "text-teal-600",
+    ring: "ring-teal-100",
   },
   emerald: {
     bg: "bg-emerald-50",
@@ -318,7 +318,7 @@ const designPrinciples = [
 
 export default function FeaturesPage() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-indigo-100">
+    <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-teal-100">
       <Nav />
 
       <main className="pt-32 pb-24">
@@ -385,7 +385,7 @@ export default function FeaturesPage() {
             className="mt-32"
           >
             <div className="text-center mb-12">
-              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-semibold mb-4">
+              <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-100 text-teal-700 text-xs font-semibold mb-4">
                 <Workflow className="w-3.5 h-3.5" />
                 55+ Actions
               </span>
@@ -454,7 +454,7 @@ export default function FeaturesPage() {
           >
             <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-8 md:p-12 text-white overflow-hidden relative">
               <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl" />
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-indigo-500/10 rounded-full blur-3xl" />
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-teal-500/10 rounded-full blur-3xl" />
 
               <div className="relative">
                 <div className="text-center mb-12">
@@ -488,8 +488,8 @@ export default function FeaturesPage() {
                   </div>
 
                   <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10">
-                    <div className="w-12 h-12 rounded-xl bg-indigo-500/20 flex items-center justify-center mb-5">
-                      <Search className="w-6 h-6 text-indigo-400" />
+                    <div className="w-12 h-12 rounded-xl bg-teal-500/20 flex items-center justify-center mb-5">
+                      <Search className="w-6 h-6 text-teal-400" />
                     </div>
                     <h3 className="text-lg font-bold text-white mb-2">
                       Multi-Strategy Fallbacks
@@ -684,7 +684,7 @@ await page.fill('[data-testid="email"]', '...');
                 whileInView="visible"
                 viewport={{ once: true }}
               >
-                <div className="bg-white rounded-2xl shadow-xl border border-slate-200 p-8">
+                <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-8">
                   <div className="space-y-3">
                     {[
                       { step: "01", label: "Navigate to /login", status: "pass" },
@@ -702,7 +702,7 @@ await page.fill('[data-testid="email"]', '...');
                           s.status === "pass"
                             ? "bg-green-50 border border-green-100"
                             : s.status === "active"
-                              ? "bg-indigo-50 border-2 border-indigo-300 ring-2 ring-indigo-100"
+                              ? "bg-teal-50 border-2 border-teal-300 ring-2 ring-teal-100"
                               : "bg-slate-50 border border-slate-200 opacity-50"
                         }`}
                       >
@@ -713,7 +713,7 @@ await page.fill('[data-testid="email"]', '...');
                           <CheckCircle className="w-4 h-4 text-green-500 flex-shrink-0" />
                         )}
                         {s.status === "active" && (
-                          <div className="w-4 h-4 rounded-full border-2 border-indigo-500 border-t-transparent animate-spin flex-shrink-0" />
+                          <div className="w-4 h-4 rounded-full border-2 border-teal-500 border-t-transparent animate-spin flex-shrink-0" />
                         )}
                         {s.status === "pending" && (
                           <div className="w-4 h-4 rounded-full border-2 border-slate-300 flex-shrink-0" />
@@ -723,7 +723,7 @@ await page.fill('[data-testid="email"]', '...');
                             s.status === "pass"
                               ? "text-green-800"
                               : s.status === "active"
-                                ? "text-indigo-800 font-medium"
+                                ? "text-teal-800 font-medium"
                                 : "text-slate-500"
                           }`}
                         >

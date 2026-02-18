@@ -108,10 +108,10 @@ export default function BlogPage() {
           {blogPosts.map((post) => (
             <article
               key={post.slug}
-              className="bg-white rounded-2xl p-8 border border-slate-100 hover:border-indigo-200 hover:shadow-lg transition-all duration-300"
+              className="bg-white rounded-2xl p-8 border border-slate-100 hover:border-teal-200 hover:shadow-lg transition-all duration-300"
             >
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-xs font-semibold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">
+                <span className="text-xs font-semibold text-teal-600 bg-teal-50 px-3 py-1 rounded-full">
                   {post.category}
                 </span>
                 <span className="text-slate-400 text-sm">{post.date}</span>
@@ -122,7 +122,7 @@ export default function BlogPage() {
               <h2 className="text-2xl font-bold text-slate-900 mb-3">
                 <Link 
                   href={`/blog/${post.slug}`}
-                  className="hover:text-indigo-600 transition-colors"
+                  className="hover:text-teal-600 transition-colors"
                 >
                   {post.title}
                 </Link>
@@ -134,7 +134,7 @@ export default function BlogPage() {
               
               <Link
                 href={`/blog/${post.slug}`}
-                className="text-indigo-600 font-semibold hover:text-indigo-700 transition-colors"
+                className="text-teal-600 font-semibold hover:text-teal-700 transition-colors"
               >
                 Read more →
               </Link>

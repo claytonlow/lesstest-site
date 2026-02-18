@@ -102,7 +102,7 @@ const aiCapabilities = [
 
 export default function HowItWorksPage() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-indigo-100">
+    <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-teal-100">
       <Nav />
 
       <main className="pt-32 pb-24">
@@ -129,14 +129,14 @@ export default function HowItWorksPage() {
               >
                 {/* Connector line for desktop */}
                 {i < quickSteps.length - 1 && (
-                  <div className="hidden lg:block absolute top-10 left-[calc(50%+50px)] w-[calc(100%-100px)] h-0.5 bg-gradient-to-r from-indigo-200 to-indigo-100" />
+                  <div className="hidden lg:block absolute top-10 left-[calc(50%+50px)] w-[calc(100%-100px)] h-0.5 bg-gradient-to-r from-teal-200 to-teal-100" />
                 )}
                 
-                <div className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-indigo-200 hover:shadow-lg transition-all duration-300 h-full">
+                <div className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-teal-200 hover:shadow-lg transition-all duration-300 h-full">
                   <div className="flex items-center gap-4 mb-4">
-                    <div className="w-16 h-16 rounded-xl bg-indigo-50 border border-indigo-100 flex items-center justify-center relative">
-                      <step.icon className="w-7 h-7 text-indigo-600" />
-                      <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-indigo-600 text-white text-xs font-bold flex items-center justify-center">
+                    <div className="w-16 h-16 rounded-xl bg-teal-50 border border-teal-100 flex items-center justify-center relative">
+                      <step.icon className="w-7 h-7 text-teal-600" />
+                      <span className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-teal-600 text-white text-xs font-bold flex items-center justify-center">
                         {step.step}
                       </span>
                     </div>
@@ -161,7 +161,7 @@ export default function HowItWorksPage() {
             className="mt-32"
           >
             <div className="text-center mb-12">
-              <span className="inline-block px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-semibold mb-4">
+              <span className="inline-block px-3 py-1 rounded-full bg-teal-50 border border-teal-100 text-teal-700 text-xs font-semibold mb-4">
                 The Editor
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
@@ -179,7 +179,7 @@ export default function HowItWorksPage() {
                 whileInView="visible"
                 viewport={{ once: true }}
               >
-                <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
+                <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
                   <Image
                     src="/screenshots/screenshot1.png"
                     alt="LessTest Editor showing visual test creation"
@@ -199,8 +199,8 @@ export default function HowItWorksPage() {
               >
                 {editorFeatures.map((feature, i) => (
                   <div key={i} className="flex gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-indigo-50 border border-indigo-100 flex items-center justify-center flex-shrink-0">
-                      <feature.icon className="w-6 h-6 text-indigo-600" />
+                    <div className="w-12 h-12 rounded-xl bg-teal-50 border border-teal-100 flex items-center justify-center flex-shrink-0">
+                      <feature.icon className="w-6 h-6 text-teal-600" />
                     </div>
                     <div>
                       <h3 className="text-lg font-semibold text-slate-900 mb-1">
@@ -284,7 +284,7 @@ export default function HowItWorksPage() {
                 viewport={{ once: true }}
                 className="order-1 lg:order-2"
               >
-                <div className="bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden">
+                <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
                   <Image
                     src="/screenshots/screenshot2.png"
                     alt="LessTest Runner showing test execution"
@@ -408,9 +408,9 @@ await page.fill('[data-testid="email"]', '...');
               ].map((item, i) => (
                 <div key={i} className="relative">
                   {i < 4 && (
-                    <div className="hidden md:block absolute top-6 left-[calc(50%+30px)] w-[calc(100%-60px)] h-0.5 bg-indigo-200" />
+                    <div className="hidden md:block absolute top-6 left-[calc(50%+30px)] w-[calc(100%-60px)] h-0.5 bg-teal-200" />
                   )}
-                  <div className="w-12 h-12 rounded-full bg-indigo-600 text-white font-bold flex items-center justify-center mx-auto mb-3">
+                  <div className="w-12 h-12 rounded-full bg-teal-600 text-white font-bold flex items-center justify-center mx-auto mb-3">
                     {i + 1}
                   </div>
                   <p className="font-semibold text-slate-900">{item.label}</p>

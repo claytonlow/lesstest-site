@@ -75,10 +75,10 @@ export function Features() {
             <motion.div
               key={i}
               variants={staggerItem}
-              className="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-indigo-200 hover:shadow-lg transition-all duration-300 group"
+              className="p-8 rounded-2xl bg-slate-50 border border-slate-100 hover:border-teal-200 hover:shadow-lg transition-all duration-300 group"
             >
-              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center border border-slate-200 mb-6 group-hover:scale-110 group-hover:border-indigo-200 transition-all duration-300">
-                <feature.icon className="w-6 h-6 text-indigo-600" />
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center border border-slate-200 mb-6 group-hover:scale-110 group-hover:border-teal-200 transition-all duration-300">
+                <feature.icon className="w-6 h-6 text-teal-600" />
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-3">
                 {feature.title}

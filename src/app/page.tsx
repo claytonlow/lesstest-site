@@ -11,7 +11,7 @@ import { Footer } from "@/components/sections/footer";
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-indigo-100">
+    <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-teal-100">
       <Nav />
       <Hero />
       <SocialProof />

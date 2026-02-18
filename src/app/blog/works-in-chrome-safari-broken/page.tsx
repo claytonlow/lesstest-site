@@ -18,7 +18,7 @@ export default function BlogPost() {
         {/* Back Link */}
         <Link 
           href="/blog"
-          className="inline-flex items-center text-slate-500 hover:text-indigo-600 transition-colors mb-8"
+          className="inline-flex items-center text-slate-500 hover:text-teal-600 transition-colors mb-8"
         >
           <ArrowLeft className="w-4 h-4 mr-2" />
           Back to Blog
@@ -27,7 +27,7 @@ export default function BlogPost() {
         {/* Article Header */}
         <header className="mb-12">
           <div className="flex items-center gap-3 mb-4">
-            <span className="text-xs font-semibold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">
+            <span className="text-xs font-semibold text-teal-600 bg-teal-50 px-3 py-1 rounded-full">
               Cross-Platform Testing
             </span>
             <span className="text-slate-400 text-sm">February 18, 2026</span>
@@ -371,7 +371,7 @@ export default function BlogPost() {
             </p>
             <a 
               href="#"
-              className="inline-flex items-center px-6 py-3 bg-indigo-600 hover:bg-indigo-700 
+              className="inline-flex items-center px-6 py-3 bg-teal-600 hover:bg-teal-700 
                        text-white font-semibold rounded-lg transition-colors"
             >
               Try LessTest Free →

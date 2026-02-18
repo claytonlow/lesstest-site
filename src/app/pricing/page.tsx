@@ -249,7 +249,7 @@ function FeatureCell({ value }: { value: FeatureAccess }) {
 
 export default function PricingPage() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-indigo-100">
+    <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-teal-100">
       <Nav />
 
       <main className="pt-32 pb-24">
@@ -274,12 +274,12 @@ export default function PricingPage() {
                 variants={staggerItem}
                 className={`relative rounded-2xl p-8 ${
                   plan.highlighted
-                    ? "bg-slate-900 text-white ring-2 ring-indigo-500 shadow-2xl md:scale-105"
+                    ? "bg-slate-900 text-white ring-2 ring-teal-500 shadow-2xl md:scale-105"
                     : "bg-white border border-slate-200 shadow-sm"
                 }`}
               >
                 {plan.badge && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-indigo-500 text-white text-sm font-semibold rounded-full">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-teal-500 text-white text-sm font-semibold rounded-full">
                     {plan.badge}
                   </div>
                 )}
@@ -334,7 +334,7 @@ export default function PricingPage() {
                     >
                       <Check
                         className={`w-4 h-4 flex-shrink-0 ${
-                          plan.highlighted ? "text-indigo-400" : "text-indigo-600"
+                          plan.highlighted ? "text-teal-400" : "text-teal-600"
                         }`}
                       />
                       {limit}
@@ -348,7 +348,7 @@ export default function PricingPage() {
                     <li key={feature} className="flex items-center gap-3">
                       <Check
                         className={`w-4 h-4 flex-shrink-0 ${
-                          plan.highlighted ? "text-indigo-400" : "text-indigo-600"
+                          plan.highlighted ? "text-teal-400" : "text-teal-600"
                         }`}
                       />
                       <span
@@ -393,11 +393,11 @@ export default function PricingPage() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="mt-12 bg-gradient-to-r from-indigo-50 to-violet-50 border border-indigo-100 rounded-2xl p-8 md:p-10"
+            className="mt-12 bg-gradient-to-r from-teal-50 to-violet-50 border border-teal-100 rounded-2xl p-8 md:p-10"
           >
             <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-              <div className="w-14 h-14 rounded-2xl bg-indigo-100 flex items-center justify-center flex-shrink-0">
-                <Users className="w-7 h-7 text-indigo-600" />
+              <div className="w-14 h-14 rounded-2xl bg-teal-100 flex items-center justify-center flex-shrink-0">
+                <Users className="w-7 h-7 text-teal-600" />
               </div>
               <div className="flex-1">
                 <h3 className="text-lg font-bold text-slate-900 mb-1">
@@ -421,7 +421,7 @@ export default function PricingPage() {
             className="mt-32"
           >
             <div className="text-center mb-12">
-              <span className="inline-block px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-semibold mb-4">
+              <span className="inline-block px-3 py-1 rounded-full bg-teal-50 border border-teal-100 text-teal-700 text-xs font-semibold mb-4">
                 Premium Tools
               </span>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
@@ -443,7 +443,7 @@ export default function PricingPage() {
                 <motion.div
                   key={feature.name}
                   variants={staggerItem}
-                  className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-indigo-200 hover:shadow-md transition-all"
+                  className="bg-white rounded-2xl p-6 border border-slate-200 hover:border-teal-200 hover:shadow-md transition-all"
                 >
                   <div
                     className={`w-12 h-12 rounded-xl flex items-center justify-center mb-4 ${feature.color}`}
@@ -486,7 +486,7 @@ export default function PricingPage() {
                       Feature
                     </th>
                     <th className="p-4 font-semibold text-slate-700 w-[20%]">Free</th>
-                    <th className="p-4 font-semibold text-indigo-600 bg-indigo-50 w-[20%]">
+                    <th className="p-4 font-semibold text-teal-600 bg-teal-50 w-[20%]">
                       Solo
                     </th>
                     <th className="p-4 font-semibold text-slate-700 w-[20%]">
@@ -506,7 +506,7 @@ export default function PricingPage() {
                       >
                         <td colSpan={4} className="p-4">
                           <div className="flex items-center gap-2">
-                            <category.icon className="w-4 h-4 text-indigo-600" />
+                            <category.icon className="w-4 h-4 text-teal-600" />
                             <span className="text-sm font-semibold text-slate-900">
                               {category.name}
                             </span>
@@ -522,7 +522,7 @@ export default function PricingPage() {
                           <td className="p-4">
                             <FeatureCell value={feature.free} />
                           </td>
-                          <td className="p-4 bg-indigo-50/30">
+                          <td className="p-4 bg-teal-50/30">
                             <FeatureCell value={feature.solo} />
                           </td>
                           <td className="p-4">
@@ -596,7 +596,7 @@ export default function PricingPage() {
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                   <Button
                     size="lg"
-                    className="w-full sm:w-auto bg-white text-indigo-600 hover:bg-slate-100 shadow-xl"
+                    className="w-full sm:w-auto bg-white text-teal-600 hover:bg-slate-100 shadow-sm"
                   >
                     <Chrome className="w-5 h-5" />
                     Add to Chrome — Free

@@ -121,7 +121,7 @@ function FeatureIcon({ value }: { value: boolean | string }) {
 
 export default function ComparePage() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-indigo-100">
+    <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-teal-100">
       <Nav />
 
       <main className="pt-32 pb-24">
@@ -144,7 +144,7 @@ export default function ComparePage() {
               <thead>
                 <tr className="border-b border-slate-200">
                   <th className="text-left p-4 font-semibold text-slate-900">Feature</th>
-                  <th className="p-4 font-semibold text-indigo-600 bg-indigo-50">LessTest</th>
+                  <th className="p-4 font-semibold text-teal-600 bg-teal-50">LessTest</th>
                   {competitors.map((c) => (
                     <th key={c.name} className="p-4 font-semibold text-slate-700">
                       {c.name}
@@ -156,7 +156,7 @@ export default function ComparePage() {
                 {Object.entries(lessTestFeatures).map(([feature, value]) => (
                   <tr key={feature} className="border-b border-slate-100 last:border-0">
                     <td className="p-4 text-slate-700">{feature}</td>
-                    <td className="p-4 bg-indigo-50/50">
+                    <td className="p-4 bg-teal-50/50">
                       <div className="flex justify-center">
                         <FeatureIcon value={value} />
                       </div>
@@ -238,7 +238,7 @@ export default function ComparePage() {
 
                 <div className="mt-8 pt-8 border-t border-slate-100">
                   <p className="text-slate-700">
-                    <span className="font-semibold text-indigo-600">Choose LessTest when:</span>{" "}
+                    <span className="font-semibold text-teal-600">Choose LessTest when:</span>{" "}
                     You want tests anyone can create and maintain, with AI that adapts to UI changes automatically.
                   </p>
                 </div>

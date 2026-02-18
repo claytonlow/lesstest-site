@@ -92,7 +92,7 @@ export function Pricing() {
               }`}
             >
               {plan.highlighted && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-indigo-500 text-white text-sm font-semibold rounded-full">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-teal-500 text-white text-sm font-semibold rounded-full">
                   Most Popular
                 </div>
               )}
@@ -137,7 +137,7 @@ export function Pricing() {
                   <li key={j} className="flex items-center gap-3">
                     <Check
                       className={`w-5 h-5 flex-shrink-0 ${
-                        plan.highlighted ? "text-indigo-400" : "text-indigo-600"
+                        plan.highlighted ? "text-teal-400" : "text-teal-600"
                       }`}
                     />
                     <span

@@ -31,7 +31,7 @@ export function CTABanner() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Button
                 size="lg"
-                className="w-full sm:w-auto bg-white text-indigo-600 hover:bg-slate-100 shadow-xl"
+                className="w-full sm:w-auto bg-white text-teal-600 hover:bg-slate-100 shadow-sm"
               >
                 <Chrome className="w-5 h-5" />
                 Add to Chrome — Free

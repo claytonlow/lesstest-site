@@ -18,7 +18,7 @@ export function PageHeader({ badge, title, description }: PageHeaderProps) {
       className="text-center max-w-3xl mx-auto"
     >
       {badge && (
-        <span className="inline-block px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-semibold mb-6">
+        <span className="inline-block px-3 py-1 rounded-full bg-teal-50 border border-teal-100 text-teal-700 text-xs font-semibold mb-6">
           {badge}
         </span>
       )}

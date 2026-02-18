@@ -25,7 +25,7 @@ export function Nav() {
     >
       <div className="flex items-center justify-between px-6 md:px-8 py-4 max-w-7xl mx-auto">
         <Link href="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
+          <div className="w-8 h-8 bg-teal-600 rounded-lg flex items-center justify-center">
             <Zap className="text-white w-5 h-5 fill-current" />
           </div>
           <span className="text-xl font-bold tracking-tight text-slate-800">
@@ -37,31 +37,31 @@ export function Nav() {
         <div className="hidden md:flex items-center gap-8">
           <Link
             href="/features"
-            className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
+            className="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors"
           >
             Features
           </Link>
           <Link
             href="/how-it-works"
-            className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
+            className="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors"
           >
             How It Works
           </Link>
           <Link
             href="/compare"
-            className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
+            className="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors"
           >
             Compare
           </Link>
           <Link
             href="/use-cases"
-            className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
+            className="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors"
           >
             Use Cases
           </Link>
           <Link
             href="/pricing"
-            className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
+            className="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors"
           >
             Pricing
           </Link>
@@ -90,35 +90,35 @@ export function Nav() {
           <div className="flex flex-col gap-4 pt-4">
             <Link
               href="/features"
-              className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
+              className="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Features
             </Link>
             <Link
               href="/how-it-works"
-              className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
+              className="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               How It Works
             </Link>
             <Link
               href="/compare"
-              className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
+              className="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Compare
             </Link>
             <Link
               href="/use-cases"
-              className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
+              className="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Use Cases
             </Link>
             <Link
               href="/pricing"
-              className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
+              className="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Pricing

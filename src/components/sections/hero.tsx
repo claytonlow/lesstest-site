@@ -20,7 +20,7 @@ export function Hero() {
       >
         <motion.div
           variants={staggerItem}
-          className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 text-indigo-700 text-xs font-semibold mb-8"
+          className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 border border-teal-100 text-teal-700 text-xs font-semibold mb-8"
         >
           <Chrome className="w-3.5 h-3.5" />
           Chrome Extension

@@ -59,13 +59,13 @@ export function HowItWorks() {
             >
               {/* Connector line */}
               {i < steps.length - 1 && (
-                <div className="hidden md:block absolute top-12 left-[calc(50%+60px)] w-[calc(100%-120px)] h-0.5 bg-gradient-to-r from-indigo-200 to-indigo-100" />
+                <div className="hidden md:block absolute top-12 left-[calc(50%+60px)] w-[calc(100%-120px)] h-0.5 bg-gradient-to-r from-teal-200 to-teal-100" />
               )}
 
               <div className="text-center">
-                <div className="inline-flex items-center justify-center w-24 h-24 rounded-2xl bg-indigo-50 border border-indigo-100 mb-6 relative">
-                  <step.icon className="w-10 h-10 text-indigo-600" />
-                  <span className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-indigo-600 text-white text-sm font-bold flex items-center justify-center">
+                <div className="inline-flex items-center justify-center w-24 h-24 rounded-2xl bg-teal-50 border border-teal-100 mb-6 relative">
+                  <step.icon className="w-10 h-10 text-teal-600" />
+                  <span className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-teal-600 text-white text-sm font-bold flex items-center justify-center">
                     {step.step}
                   </span>
                 </div>

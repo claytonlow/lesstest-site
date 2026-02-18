@@ -301,10 +301,10 @@ const colorClasses: Record<
   { bg: string; border: string; text: string; icon: string }
 > = {
   indigo: {
-    bg: "bg-indigo-50",
-    border: "border-indigo-100",
-    text: "text-indigo-700",
-    icon: "text-indigo-600",
+    bg: "bg-teal-50",
+    border: "border-teal-100",
+    text: "text-teal-700",
+    icon: "text-teal-600",
   },
   emerald: {
     bg: "bg-emerald-50",
@@ -346,7 +346,7 @@ const colorClasses: Record<
 
 export default function UseCasesPage() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-indigo-100">
+    <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-teal-100">
       <Nav />
 
       <main className="pt-32 pb-24">
@@ -466,16 +466,16 @@ export default function UseCasesPage() {
           >
             <div className="bg-gradient-to-br from-slate-900 to-slate-800 rounded-2xl p-8 md:p-12 text-white overflow-hidden relative">
               {/* Background decoration */}
-              <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl" />
+              <div className="absolute top-0 right-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl" />
               <div className="absolute bottom-0 left-0 w-64 h-64 bg-violet-500/10 rounded-full blur-3xl" />
 
               <div className="relative">
                 <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 to-violet-500 flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-teal-500 to-violet-500 flex items-center justify-center">
                     <Sparkles className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <span className="text-xs font-semibold text-indigo-400 uppercase tracking-wider">
+                    <span className="text-xs font-semibold text-teal-400 uppercase tracking-wider">
                       Power User Showcase
                     </span>
                     <h2 className="text-2xl md:text-3xl font-bold">
@@ -583,8 +583,8 @@ export default function UseCasesPage() {
                       </div>
                     </div>
 
-                    <div className="mt-6 p-4 bg-indigo-500/10 rounded-lg border border-indigo-500/20">
-                      <p className="text-sm text-indigo-200">
+                    <div className="mt-6 p-4 bg-teal-500/10 rounded-lg border border-teal-500/20">
+                      <p className="text-sm text-teal-200">
                         <span className="font-semibold">Pro tip:</span> This entire 14-step flow is built visually—no code required. 
                         But when you need JavaScript, it&apos;s there.
                       </p>

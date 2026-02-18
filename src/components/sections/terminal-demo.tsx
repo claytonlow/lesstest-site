@@ -117,21 +117,21 @@ export function TerminalDemo() {
                       variants={staggerItem}
                       className={`flex items-start gap-3 p-3 rounded-lg border ${
                         step.status === "running"
-                          ? "border-indigo-200 bg-indigo-50"
+                          ? "border-teal-200 bg-teal-50"
                           : "border-slate-100 bg-slate-50"
                       }`}
                     >
                       <div
                         className={`w-6 h-6 rounded-md flex items-center justify-center flex-shrink-0 ${
                           step.status === "running"
-                            ? "bg-indigo-100"
+                            ? "bg-teal-100"
                             : "bg-green-100"
                         }`}
                       >
                         {step.status === "complete" ? (
                           <CheckCircle className="w-4 h-4 text-green-600" />
                         ) : (
-                          <step.icon className="w-4 h-4 text-indigo-600" />
+                          <step.icon className="w-4 h-4 text-teal-600" />
                         )}
                       </div>
                       <div className="min-w-0 flex-1">
