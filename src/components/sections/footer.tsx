@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const footerLinks = {
   Product: [
-    { label: "Features", href: "#features" },
-    { label: "Pricing", href: "#pricing" },
+    { label: "Features", href: "/features" },
+    { label: "Pricing", href: "/pricing" },
     { label: "Compare", href: "/compare" },
     { label: "Use Cases", href: "/use-cases" },
   ],
@@ -19,7 +19,6 @@ const footerLinks = {
   Company: [
     { label: "About", href: "#" },
     { label: "Blog", href: "#" },
-    { label: "Careers", href: "#" },
     { label: "Contact", href: "#" },
   ],
   Legal: [

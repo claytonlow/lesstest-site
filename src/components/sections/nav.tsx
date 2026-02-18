@@ -35,12 +35,12 @@ export function Nav() {
 
         {/* Desktop menu */}
         <div className="hidden md:flex items-center gap-8">
-          <a
-            href="#features"
+          <Link
+            href="/features"
             className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
           >
             Features
-          </a>
+          </Link>
           <Link
             href="/how-it-works"
             className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
@@ -59,12 +59,12 @@ export function Nav() {
           >
             Use Cases
           </Link>
-          <a
-            href="#pricing"
+          <Link
+            href="/pricing"
             className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
           >
             Pricing
-          </a>
+          </Link>
           <Button size="sm" className="rounded-full">
             Add to Chrome
           </Button>
@@ -88,13 +88,13 @@ export function Nav() {
       >
         <div className="px-6 pb-6 glass border-t border-slate-100">
           <div className="flex flex-col gap-4 pt-4">
-            <a
-              href="#features"
+            <Link
+              href="/features"
               className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Features
-            </a>
+            </Link>
             <Link
               href="/how-it-works"
               className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
@@ -116,13 +116,13 @@ export function Nav() {
             >
               Use Cases
             </Link>
-            <a
-              href="#pricing"
+            <Link
+              href="/pricing"
               className="text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Pricing
-            </a>
+            </Link>
             <Button size="sm" className="w-full mt-2">
               Add to Chrome
             </Button>
