@@ -17,6 +17,30 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    slug: "works-in-chrome-safari-broken",
+    title: "It Works in Chrome. Safari Says Otherwise.",
+    excerpt: "Cross-browser testing is the nightmare that never ends. Safari works differently. Mobile is chaos. Here's how to finally solve it.",
+    date: "2026-02-18",
+    readTime: "8 min read",
+    category: "Cross-Platform Testing",
+  },
+  {
+    slug: "sprint-ends-friday",
+    title: "The Sprint Ends Friday. QA is Still Testing Monday.",
+    excerpt: "QA is always the bottleneck. Always scrambling. Always working overtime. Here's how to escape the sprint crunch cycle.",
+    date: "2026-02-18",
+    readTime: "7 min read",
+    category: "Agile & DevOps",
+  },
+  {
+    slug: "hate-writing-test-cases",
+    title: "I'd Rather Debug Production Than Write Another Test Case",
+    excerpt: "If you hate writing test cases, you're not alone—and you're not wrong to question your career. Here's why this universal pain point has a solution.",
+    date: "2026-02-18",
+    readTime: "6 min read",
+    category: "QA Productivity",
+  },
+  {
     slug: "finished-playwright-course-now-what",
     title: "I Finished the Playwright Course. Now I Have No Idea How Real Projects Work.",
     excerpt: "The gap between learning testing frameworks and understanding professional project structure is massive. Here's what tutorials don't teach you.",
