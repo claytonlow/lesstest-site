@@ -17,6 +17,22 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    slug: "what-happens-when-you-run-an-llm-test",
+    title: "What Happens When You Run an LLM Test (And Why It Costs So Much)",
+    excerpt: "Ever wondered what happens behind the scenes when an AI-powered testing platform runs your tests? Here's the honest breakdown of token costs, latency, and why hybrid approaches might be your best bet.",
+    date: "2026-02-18",
+    readTime: "7 min read",
+    category: "AI Testing",
+  },
+  {
+    slug: "full-llm-vs-hybrid-testing",
+    title: "Why Full LLM Testing Isn't the Answer (And What Actually Works)",
+    excerpt: "Full LLM testing tools promise the world—70% faster test creation, self-healing tests, plain English authoring. But at scale, the reality doesn't match the hype. Here's why hybrid testing is the smarter path forward.",
+    date: "2026-02-18",
+    readTime: "6 min read",
+    category: "AI Testing",
+  },
+  {
     slug: "works-in-chrome-safari-broken",
     title: "It Works in Chrome. Safari Says Otherwise.",
     excerpt: "Cross-browser testing is the nightmare that never ends. Safari works differently. Mobile is chaos. Here's how to finally solve it.",
