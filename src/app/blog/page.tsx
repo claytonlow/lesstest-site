@@ -17,6 +17,14 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    slug: "the-golden-cage",
+    title: "The Golden Cage: Why Testing Platforms Don't Want You to Leave",
+    excerpt: "Most testing platforms lock you into proprietary formats and marked-up AI costs. Here's why that matters—and how LessTest takes a different approach to data ownership.",
+    date: "2026-02-19",
+    readTime: "6 min read",
+    category: "Vendor Lock-in",
+  },
+  {
     slug: "what-happens-when-you-run-an-llm-test",
     title: "What Happens When You Run an LLM Test (And Why It Costs So Much)",
     excerpt: "Ever wondered what happens behind the scenes when an AI-powered testing platform runs your tests? Here's the honest breakdown of token costs, latency, and why hybrid approaches might be your best bet.",
