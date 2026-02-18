@@ -17,6 +17,14 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    slug: "full-llm-vs-hybrid-testing",
+    title: "Why Full LLM Testing Isn't the Answer (And What Actually Works)",
+    excerpt: "Full LLM testing tools promise the world—70% faster test creation, self-healing tests, plain English authoring. But at scale, the reality doesn't match the hype. Here's why hybrid testing is the smarter path forward.",
+    date: "2026-02-18",
+    readTime: "6 min read",
+    category: "AI Testing",
+  },
+  {
     slug: "works-in-chrome-safari-broken",
     title: "It Works in Chrome. Safari Says Otherwise.",
     excerpt: "Cross-browser testing is the nightmare that never ends. Safari works differently. Mobile is chaos. Here's how to finally solve it.",
