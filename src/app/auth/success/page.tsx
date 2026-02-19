@@ -2,7 +2,7 @@
 
 import { useSearchParams } from "next/navigation";
 import { Suspense } from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import {
   ArrowRight,
   Chrome,
@@ -16,7 +16,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { fadeInUp, staggerContainer, staggerItem } from "@/lib/animations";
 
-const checkmarkDraw = {
+const checkmarkDraw:Variants   = {
   hidden: { pathLength: 0, opacity: 0 },
   visible: {
     pathLength: 1,
@@ -25,7 +25,7 @@ const checkmarkDraw = {
   },
 };
 
-const xDraw = {
+const xDraw:Variants = {
   hidden: { pathLength: 0, opacity: 0 },
   visible: {
     pathLength: 1,
@@ -34,7 +34,7 @@ const xDraw = {
   },
 };
 
-const circleDraw = {
+const circleDraw:Variants = {
   hidden: { pathLength: 0, opacity: 0 },
   visible: {
     pathLength: 1,
@@ -43,7 +43,7 @@ const circleDraw = {
   },
 };
 
-const pulseRing = {
+const pulseRing:Variants = {
   hidden: { scale: 0.8, opacity: 0 },
   visible: {
     scale: [0.8, 1.4, 1.4],
@@ -52,7 +52,7 @@ const pulseRing = {
   },
 };
 
-const shakeTrigger = {
+const shakeTrigger:Variants = {
   hidden: { x: 0 },
   visible: {
     x: [0, -6, 6, -4, 4, -2, 2, 0],
