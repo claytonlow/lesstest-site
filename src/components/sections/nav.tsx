@@ -65,6 +65,12 @@ export function Nav() {
           >
             Pricing
           </Link>
+          <Link
+            href="/playground"
+            className="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors"
+          >
+            Playground
+          </Link>
           <Button size="sm" className="rounded-full">
             Add to Chrome
           </Button>
@@ -122,6 +128,13 @@ export function Nav() {
               onClick={() => setIsOpen(false)}
             >
               Pricing
+            </Link>
+            <Link
+              href="/playground"
+              className="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Playground
             </Link>
             <Button size="sm" className="w-full mt-2">
               Add to Chrome

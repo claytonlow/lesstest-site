@@ -272,6 +272,23 @@ LessTest is built on five core principles:
 
 ---
 
+## Interactive Playground
+
+LessTest includes a purpose-built **Playground** — a set of interactive web pages designed for testing every tool in the catalog. Point your LessTest extension at the playground to explore, learn, and regression-test all 55+ actions.
+
+### Playground Structure
+
+- **Hub Page** (`/playground`) — Visual grid of tool categories with links to focused sub-pages. Tests navigation, click, hover, and assertion tools right from the hub.
+- **Forms & Inputs** (`/playground/forms`) — Text fields, checkboxes, radio buttons, dropdowns, file uploads, and keyboard-triggered actions. Covers Send Text, Clear Input, Check/Uncheck, Select Option, File Upload, and Press Key.
+- **Mouse & Actions** (`/playground/actions`) — Click counters, double-click inline editing, right-click context menus, hover tooltips and dropdown menus, drag-and-drop reordering, and scrollable areas. Covers Click, Double Click, Right Click, Hover, Drag & Drop, and Scroll.
+- **Data & Assertions** (`/playground/data`) — Dynamic counters, visibility toggles, attribute states (toggles, status badges, disabled buttons), star ratings, dynamic lists, and static extraction targets. Covers Assert Visible, Assert Absence, Assert Text, Assert Attribute, Assert Count, Extract Variable, and Set Variable.
+- **Network & APIs** (`/playground/network`) — Buttons that fire real HTTP requests (GET, POST, slow, error endpoints) with live response displays. Covers Start Network Capture, Wait for Capture, Webhook, Route Network Request, and Wait for Network Idle.
+- **Browser Storage** (`/playground/storage`) — Live viewers for localStorage, sessionStorage, and cookies with add/remove/clear controls. Covers Set/Get/Remove Local Storage, Set/Get/Remove Session Storage, and Set/Delete Cookie.
+
+Every interactive element includes `data-testid` attributes for reliable selector targeting.
+
+---
+
 ## Getting Started
 
 1. Install the LessTest Chrome extension
@@ -281,6 +298,7 @@ LessTest is built on five core principles:
    - Add a Navigate step
    - Use the element picker to add a Click step
    - Run and watch it execute
+4. Try the **Playground** to explore all 55+ tools in a safe sandbox
 
 **No downloads. No IDE. No configuration. No code.**
 
